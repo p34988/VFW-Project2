@@ -1,0 +1,91 @@
+<!doctype html>
+<!--
+	Warren Morris
+	VFW 1303
+	Project 2
+-->
+
+<html>
+	<head>
+		<meta charset="uft-8" />
+		<meta name="destription" content="Keeping track of assembled bikes." />
+		<meta name="keywords" content="bikes" />
+		<meta name="robots" content="noindex, nofollow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+	
+		<title>Add bike</title> 
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		
+	
+	
+		<h1><center>Add a bike.<center></h1>
+		
+		<form>
+			<fieldset>
+				<legend><b>Bike Information:</b></legend>
+						<br />
+						<label for="assembler"><b>Assembled by:</b></label><br />
+				     	<input type="textfield" id="assembler" /><br />
+				 		<br />
+					
+						<label for="assdate"><b>Date assembled: </b></label><br />
+						<input type="date" id="assdate"><br />
+						<br />
+					
+				
+				
+						<label for="biketype"><b>Bike Type:</b></label><br />
+						<select id="biketype">
+							<option value="bmx">BMX</option>
+							<option value="mtbike">Mountain Bike</option>
+							<option value="cruiser">Cruiser</option>
+							<option value="roadbike">Road bike</option>
+						</select><br />
+						<br />
+					
+					
+						<label for="marked"><b>Marked:</b></label><br />
+						<ul>
+			        		<li><label for="marked">Yes</label><input type="radio" name="marked" id="marked" value="yes" /></li>
+			        		<li><label for="marked">No</label><input type="radio" checked name="marked" id="marked" value="no" /></li>
+		        		</ul><br />
+						
+					
+					
+					
+						<label  for="asstime"><b>Assembly time(<i>in minutes</i>):</b></label><br />
+						<input type="range" id="asstime" min="1" max="360" /><label id="atvalue">  ???</label><br />
+						<br />
+						
+						<label for="comments"><b>Comments:</b></label><br />
+						<textarea id="comments" rows="5" cols="30"></textarea><br />
+						
+						<input type="button" id="submit" value="Submit bike" /><br />
+			</fieldset>
+	
+		</form>
+	
+	
+		<a href="#" id="clear">Clear Stored Data</a>
+		<a href="#" id="displayLink">Display Data</a>
+		
+		
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
