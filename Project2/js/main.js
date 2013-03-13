@@ -5,14 +5,22 @@
 
 
 window.addEventListener("DOMContentLoaded", function () {
+
+
+
+
 	function $(x) {
 		var element = document.getElementById(x);
 		return element;
 	}
 		
-	function uat(v) {
-
-		$(atvalue).innerHTML = "0"; 
+	function uat(v) { //this thing hates me
+console.log(updateAT);
+		var justworkplease = $(asstext).value=v;
+	/* justworkplease.value=v;  */
+		
+		//document.getElementById('asstext').value=v; 
+	
 	}
 //store data
 	function showData () {
@@ -21,7 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	}
 
 //dumpdata
-	function dumpData () {
+	function dumpLocal () {
 		
 		
 		
@@ -37,7 +45,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 //save
 
-	function save () {
+	function storeData () {
 		
 		
 		
@@ -56,7 +64,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	
 	
 	var updateAT = $('asstime');
-	updateAT.addEventListener("change", uat("test"));
+	
+	updateAT.addEventListener("onchange", uat(updateAT.value));
 	var displayData = $('displayLink');
 	displayData.addEventListener("click", showData);
 	var clearData = $('clear');
@@ -70,4 +79,4 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-};
+});
